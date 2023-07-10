@@ -82,7 +82,7 @@ We can use foreach collection items index as serial no (SL) in pagination.
     ...
     @foreach ($products as $product)
     <tr>
-        <td>{{ $loop->index + $product->firstItem() }}</td>
+        <td>{{ $loop->index + $products->firstItem() }}</td>
         ...
     @endforeach
 ```
